@@ -57,7 +57,7 @@ module Definition =
         |=> Inherits T<Dom.EventTarget>
         |+> Static [
             Constructor (T<string>?title * !?NotificationOptions?options)
-            "requestPermission" => !?(NotificationPermission ^-> T<unit>)?callback ^-> T<Promise<_>>[NotificationPermission]
+            "requestPermission" => !?(NotificationPermission ^-> T<unit>)?callback ^-> T<Promise<string>>
             "permission" =? NotificationPermission
         ]
         |+> Instance [

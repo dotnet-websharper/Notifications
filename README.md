@@ -64,6 +64,8 @@ The Notifications API allows web applications to send notifications to users. Ke
 3. **Native Browser Integration**: Works with system-level notifications for a seamless experience.
 4. **Customizable Messages**: Supports different types of messages, actions, and icons.
 
+**Note:** If there is no prompted permission request for notifications, please allow notifications manually in your browser settings.
+
 Integrating the Notifications API with WebSharper allows developers to create interactive and user-friendly web applications in F#.
 
 ## How to Use the Notifications API
@@ -129,11 +131,3 @@ module Client =
 This example demonstrates how to request permission and display notifications dynamically.
 
 For a complete implementation, refer to the [Sample Project](https://dotnet-websharper.github.io/Notifications/).
-
-## License
-
-This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE.md) file for details.
-
-## Acknowledgments
-
-Special thanks to the WebSharper team and contributors for their efforts in enabling seamless integration of APIs into F# projects.

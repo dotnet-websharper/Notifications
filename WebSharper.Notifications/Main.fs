@@ -81,13 +81,21 @@ module Definition =
             "close" => T<unit> ^-> T<unit>
 
             "onclick" =@ T<unit> ^-> T<unit>
+            |> ObsoleteWithMessage "Use OnClick instead"
             "onclick" =@ T<Dom.Event> ^-> T<unit>
+            |> WithSourceName "OnClick"
             "onclose" =@ T<unit> ^-> T<unit>
+            |> ObsoleteWithMessage "Use OnClose instead"
             "onclose" =@ T<Dom.Event> ^-> T<unit>
+            |> WithSourceName "OnClose"
             "onerror" =@ T<unit> ^-> T<unit>
+            |> ObsoleteWithMessage "Use OnError instead"
             "onerror" =@ T<Dom.Event> ^-> T<unit>
+            |> WithSourceName "OnError"
             "onshow" =@ T<unit> ^-> T<unit>
+            |> ObsoleteWithMessage "Use OnShow instead"
             "onshow" =@ T<Dom.Event> ^-> T<unit>
+            |> WithSourceName "OnShow"
         ]
 
     let NotificationEventOptions =

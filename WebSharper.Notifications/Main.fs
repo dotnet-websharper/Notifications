@@ -59,6 +59,7 @@ module Definition =
             Constructor (T<string>?title * !?NotificationOptions?options)
             "requestPermission" => !?(NotificationPermission ^-> T<unit>)?callback ^-> T<Promise<string>>
             "permission" =? NotificationPermission
+            "maxActions" =? T<int>
         ]
         |+> Instance [
             "title" =? T<string>
@@ -78,6 +79,15 @@ module Definition =
             "actions" =? !| NotificationAction.Type
 
             "close" => T<unit> ^-> T<unit>
+
+            "onclick" =@ T<unit> ^-> T<unit>
+            "onclick" =@ T<Dom.Event> ^-> T<unit>
+            "onclose" =@ T<unit> ^-> T<unit>
+            "onclose" =@ T<Dom.Event> ^-> T<unit>
+            "onerror" =@ T<unit> ^-> T<unit>
+            "onerror" =@ T<Dom.Event> ^-> T<unit>
+            "onshow" =@ T<unit> ^-> T<unit>
+            "onshow" =@ T<Dom.Event> ^-> T<unit>
         ]
 
     let NotificationEventOptions =

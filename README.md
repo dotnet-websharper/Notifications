@@ -12,7 +12,7 @@ The repository consists of two main projects:
 
 2. **Sample Project**:
    - Demonstrates how to use the Notifications API with WebSharper syntax.
-   - Includes a GitHub Pages demo: [View Demo](https://dotnet-websharper.github.io/Notifications/).
+   - Includes a GitHub Pages demo: [View Demo](https://dotnet-websharper.github.io/NotificationsAPI/).
 
 ## Features
 
@@ -51,7 +51,7 @@ The repository consists of two main projects:
    ```
 
 4. Open the hosted demo to see the Sample project in action:
-   [https://dotnet-websharper.github.io/Notifications/](https://dotnet-websharper.github.io/Notifications/)
+   [https://dotnet-websharper.github.io/NotificationsAPI/](https://dotnet-websharper.github.io/NotificationsAPI/)
 
 ## Why Use the Notifications API
 
@@ -128,4 +128,4 @@ module Client =
 
 This example demonstrates how to request permission and display notifications dynamically.
 
-For a complete implementation, refer to the [Sample Project](https://dotnet-websharper.github.io/Notifications/).
+For a complete implementation, refer to the [Sample Project](https://dotnet-websharper.github.io/NotificationsAPI/).
